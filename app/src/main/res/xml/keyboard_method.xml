@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@android:drawable/ic_media_play"
+    android:settingsActivity="com.sanketbhat.cheatgtasa.MainActivity">
+    <subtype
+        android:name="Cheat Keyboard"
+        android:icon="@android:drawable/ic_media_play"
+        android:imeSubtypeMode="keyboard" />
+</input-method>

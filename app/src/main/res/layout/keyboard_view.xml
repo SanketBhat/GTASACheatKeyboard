@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:colorBackground"
+    android:layout_gravity="bottom">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cheatList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWeapon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnWeapon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weapon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVehicle"
+        app:layout_constraintStart_toEndOf="@+id/btnPlayer" />
+
+    <Button
+        android:id="@+id/btnVehicle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vehicle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnGame"
+        app:layout_constraintStart_toEndOf="@+id/btnWeapon" />
+
+    <Button
+        android:id="@+id/btnGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnWeather"
+        app:layout_constraintStart_toEndOf="@+id/btnVehicle" />
+
+    <Button
+        android:id="@+id/btnWeather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnOther"
+        app:layout_constraintStart_toEndOf="@+id/btnGame" />
+
+    <Button
+        android:id="@+id/btnOther"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnWeather" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
